@@ -1,51 +1,62 @@
-body{
-    background:#eee;
-  }
-  
-  h1{
-    text-align:center;
-    margin-bottom:5px;
-  }
-  
-  p.info{
-    text-align:center;
-    width:400px;
-    margin:0 auto;
-    font-size:12px;
-    font-weight:bold;
-    color:#666;
-    margin-bottom:20px;
-  }
-  
-  #game-base{
-    width:640px;  
-    margin:0 auto;
-    padding-top:60px;
-  }
-  
-  #game-table{
-    width:434px;
-    height:374px;
-    margin:0 auto;
-    background:url("http://img.sr/images/2014/01/28/base.png") 0 0 no-repeat;
-    position:relative;
-  }
-  
-  .disc{
-    position:absolute;
-    z-index:-1;
-    top:-55px;
-    left:14px;
-    width:46px;
-    height:46px;
-    border-radius:46px;
-    transition:all .3s;
-  }
-  
-  .disc.red{
-    background:#d96666;
-  }
-  
-  .disc.yellow{
-    background:#ffeb79;
-  }
+/* game board table */
+.{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+#game{
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 650px;
+  height: 600px;
+  background: rgba(23, 9, 224, 0.808);
+  border: 1px solid black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.548);
+  padding: 1.5rem;
+}
+#board td {
+
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: solid 1.5px rgba(14, 0, 0, 0.87);
+  border-radius: 50%;
+}
+
+.reset{
+  position: absolute;
+  top: 105vh;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1.5px solid black;
+  width: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}

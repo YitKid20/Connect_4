@@ -1,19 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="connect.css">
-    <title>Document</title>
+  <title>Connect 4</title>
+  <link href="connect.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Connect Four Game</h1>
-<p class="info">Connect four is two player game. You can play with pc this js version of game. Made with native javascript on codepen. Defensive AI. Use chrome for best experience.</p>
-<div id="game-base">
-  <div id="game-table">
-    
-  </div>
-</div><!-- end base -->
+  <h1>Connect Four</h1>
+  <h3 class="Player-Turn"></h3>
+
+<div id="game">
+  <table id="board">
+  <tr>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+  </tr>
+  <tr>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+  </tr>
+  <tr>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+  </tr>
+  <tr>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+  </tr>
+  <tr>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+  </tr>
+  <tr>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+    <td class="slot"></td>
+  </tr>
+ 
+</table>
+</div>
+
+<div class="reset">Reset</div>
+
+
 <script src="connect.js"></script>
+
 </body>
 </html>
